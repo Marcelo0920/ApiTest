@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.post("/test", (req, res) => {
   const { message } = req.body;
+  console.log(message);
   res.json({ success: true, received: message });
 });
 
